@@ -13,36 +13,74 @@ const ptBR = {
             projectsButton: 'Ver projetos',
             contactButton: 'Entrar em contato',
         },
+        services: {
+            title: 'O que faço',
+
+            build: {
+                title: 'Desenvolver',
+                description:
+                    'Sites, soluções WooCommerce e aplicações web desenvolvidos de acordo com as necessidades reais do negócio.',
+            },
+
+            improve: {
+                title: 'Otimizar',
+                description:
+                    'Melhorias de desempenho, funcionalidades e UX técnica em sites e aplicações existentes.',
+            },
+
+            automate: {
+                title: 'Automatizar & integrar',
+                meta: 'APIs · Integrações com IA · Serviços externos',
+                description:
+                    'APIs, serviços externos e funcionalidades com IA que simplificam processos e ampliam as possibilidades do seu site.',
+            },
+
+            maintain: {
+                title: 'Manter & evoluir',
+                description:
+                    'Manutenção, correções e desenvolvimento contínuo para manter soluções digitais confiáveis e atualizadas.',
+            },
+        },
         projects: {
             title: 'Projetos selecionados',
             items: {
                 digitalBundleBuilder: {
                     title: 'WooCommerce Digital Bundle Builder',
-                    description: 'Um plugin WordPress para criar e vender pacotes personalizados de produtos digitais através do WooCommerce.',
+                    type: 'PLUGIN / PRODUTO',
+                    description:
+                        'Plugin WordPress para criar e vender pacotes personalizados de produtos digitais através do WooCommerce.',
                     technologies: 'WordPress · PHP · JavaScript · WooCommerce',
                 },
-                photoOptimizer: {
-                    title: 'Photo Optimizer',
-                    description: 'Um plugin WordPress para otimizar imagens de sites e melhorar o desempenho de mídia.',
+
+                notarhub: {
+                    title: 'NotarHub',
+                    type: 'SITE / PROJETO VIA AGÊNCIA',
+                    description:
+                        'Ampla reformulação de uma plataforma WordPress profissional para o setor notarial alemão.',
+                    technologies: 'WordPress · PHP · JavaScript · REST API',
+                },
+
+                ews: {
+                    title: 'Ewald W. Schneider',
+                    type: 'SITE / CLIENTE DIRETO',
+                    description:
+                        'Desenvolvimento completo de um site institucional para uma empresa alemã de consultoria.',
                     technologies: 'WordPress · PHP · JavaScript',
                 },
-                engelApotheke: {
-                    title: 'Engel Apotheke Naunhof',
-                    description: 'Implementação responsiva de um site WordPress a partir de um design fornecido, incluindo desenvolvimento frontend e controle de qualidade.',
-                    technologies: 'WordPress · Elementor · CSS · JavaScript',
+
+                padeffke: {
+                    title: 'Bäckerei Padeffke',
+                    type: 'SITE / PROJETO VIA AGÊNCIA',
+                    description:
+                        'Desenvolvimento completo do site de uma tradicional rede alemã de padarias.',
+                    technologies: 'WordPress · PHP · JavaScript',
                 },
+            
             },
+            viewAll: 'Ver todos os projetos →',
         },
-        services: {
-            title: 'O que faço',
-            wordpress: {
-                title: 'Desenvolvimento WordPress',
-                description: 'Sites personalizados, plugins e soluções técnicas com foco em desempenho, manutenção e necessidades reais do negócio.',
-            },
-            dotnet: {
-                title: '.NET & Aplicações Web',
-                description: 'Aplicações web e APIs desenvolvidas com C#, ASP.NET Core e tecnologias modernas de frontend.',
-            },
+        testimonials: {
+            label: 'O que os clientes dizem',
         },
         experience: {
             title: 'Experiência & Clientes',
@@ -57,11 +95,6 @@ const ptBR = {
             title: 'Tem um projeto em mente? Vamos conversar.',
             button: 'Entrar em contato',
         },
-    },
-
-    projects: {
-        title: 'Projetos',
-        intro: 'Projetos selecionados de desenvolvimento web, trabalhos para clientes e produtos técnicos.',
     },
 
     services: {

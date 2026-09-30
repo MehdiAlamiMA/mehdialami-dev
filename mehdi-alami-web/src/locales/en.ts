@@ -9,41 +9,79 @@ const en = {
         hero: {
             name: 'Mehdi Alami',
             title: 'Web Developer — WordPress & .NET',
-            description: 'I build reliable websites and web applications for businesses and digital teams.',
+            description: 'I build and improve websites and web applications that are fast, reliable and easier to maintain.',
             projectsButton: 'View projects',
             contactButton: 'Contact me',
+        },
+        services: {
+            title: 'What I do',
+
+            build: {
+                title: 'Build',
+                description:
+                    'Websites, WooCommerce solutions and web applications built around real business needs.',
+            },
+
+            improve: {
+                title: 'Improve',
+                description:
+                    'Performance, functionality and technical UX improvements for existing websites and applications.',
+            },
+
+            automate: {
+                title: 'Automate & integrate',
+                meta: 'APIs · AI integrations · Third-party services',
+                description:
+                    'APIs, third-party services and AI-powered features that simplify workflows and extend what your website can do.',
+            },
+
+            maintain: {
+                title: 'Maintain & evolve',
+                description:
+                    'Maintenance, troubleshooting and ongoing development to keep digital solutions reliable and up to date.',
+            },
         },
         projects: {
             title: 'Selected Projects',
             items: {
                 digitalBundleBuilder: {
                     title: 'WooCommerce Digital Bundle Builder',
-                    description: 'A WordPress plugin for creating and selling custom digital product bundles through WooCommerce.',
+                    type: 'PLUGIN / PRODUCT',
+                    description:
+                        'WordPress plugin for creating and selling custom digital product bundles through WooCommerce.',
                     technologies: 'WordPress · PHP · JavaScript · WooCommerce',
                 },
-                photoOptimizer: {
-                    title: 'Photo Optimizer',
-                    description: 'A WordPress plugin for optimizing website images and improving media performance.',
+
+                notarhub: {
+                    title: 'NotarHub',
+                    type: 'WEBSITE / AGENCY PROJECT',
+                    description:
+                        'Extensive redevelopment of a professional WordPress platform for the German notary sector.',
+                    technologies: 'WordPress · PHP · JavaScript · REST API',
+                },
+
+                ews: {
+                    title: 'Ewald W. Schneider',
+                    type: 'WEBSITE / DIRECT CLIENT',
+                    description:
+                        'Complete development of a corporate website for a German consulting company.',
                     technologies: 'WordPress · PHP · JavaScript',
                 },
-                engelApotheke: {
-                    title: 'Engel Apotheke Naunhof',
-                    description: 'Responsive WordPress website implementation based on a provided design, including frontend development and quality assurance.',
-                    technologies: 'WordPress · Elementor · CSS · JavaScript',
+
+                padeffke: {
+                    title: 'Bäckerei Padeffke',
+                    type: 'WEBSITE / AGENCY PROJECT',
+                    description:
+                        'Complete website development for an established German bakery group.',
+                    technologies: 'WordPress · PHP · JavaScript',
                 },
-            }
-        },
-        services: {
-            title: 'What I do',
-            wordpress: {
-                title: 'WordPress Development',
-                description: 'Custom websites, plugins and technical solutions built for performance, maintainability and real business needs.',
             },
-            dotnet: {
-                title: '.NET & Web Applications',
-                description: 'Web applications and APIs built with C#, ASP.NET Core and modern frontend technologies.',
-            },
+            viewAll: 'View all projects →',
         },
+        testimonials: {
+            label: 'What clients say',
+        },
+        
         experience: {
             title: 'Experience & Clients',
             companies: 'DPA · Innomotion Media · D-Mind · Ewald W. Schneider',

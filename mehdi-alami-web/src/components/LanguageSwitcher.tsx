@@ -3,20 +3,31 @@ import { useTranslation } from 'react-i18next'
 function LanguageSwitcher() {
     const { i18n } = useTranslation()
 
+    const languages = [
+        { code: 'en', label: 'EN' },
+        { code: 'de', label: 'DE' },
+        { code: 'pt-BR', label: 'PT' },
+    ]
+
+    const currentLanguage = i18n.resolvedLanguage || i18n.language
+
+    const changeLanguage = (language: string) => {
+        i18n.changeLanguage(language)
+        localStorage.setItem('language', language)
+    }
+
     return (
         <div>
-            <button onClick={() => {
-                i18n.changeLanguage('en')
-                localStorage.setItem('language', 'en')
-            }}>EN</button>
-            <button onClick={() => {
-                i18n.changeLanguage('de')
-                localStorage.setItem('language', 'de')
-            }}>DE</button>
-            <button onClick={() => {
-                i18n.changeLanguage('pt-BR')
-                localStorage.setItem('language', 'pt-BR')
-            }}>PT</button>
+            {languages
+                .filter((language) => language.code !== currentLanguage)
+                .map((language) => (
+                    <button
+                        key={language.code}
+                        onClick={() => changeLanguage(language.code)}
+                    >
+                        {language.label}
+                    </button>
+                ))}
         </div>
     )
 }

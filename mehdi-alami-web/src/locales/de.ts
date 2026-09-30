@@ -13,36 +13,73 @@ const de = {
             projectsButton: 'Projekte ansehen',
             contactButton: 'Kontakt aufnehmen',
         },
+        services: {
+            title: 'Was ich mache',
+
+            build: {
+                title: 'Entwickeln',
+                description:
+                    'Websites, WooCommerce-Lösungen und Webanwendungen, die auf konkrete Geschäftsanforderungen zugeschnitten sind.',
+            },
+
+            improve: {
+                title: 'Optimieren',
+                description:
+                    'Performance, Funktionen und technische UX bestehender Websites und Anwendungen verbessern.',
+            },
+
+            automate: {
+                title: 'Automatisieren & integrieren',
+                meta: 'APIs · KI-Integrationen · Externe Dienste',
+                description:
+                    'APIs, externe Dienste und KI-gestützte Funktionen, die Abläufe vereinfachen und Websites funktional erweitern.',
+            },
+
+            maintain: {
+                title: 'Betreuen & weiterentwickeln',
+                description:
+                    'Wartung, Fehlerbehebung und kontinuierliche Weiterentwicklung für zuverlässige und aktuelle digitale Lösungen.',
+            },
+        },
         projects: {
             title: 'Ausgewählte Projekte',
             items: {
                 digitalBundleBuilder: {
                     title: 'WooCommerce Digital Bundle Builder',
-                    description: 'Ein WordPress-Plugin zum Erstellen und Verkaufen individueller digitaler Produkt-Bundles über WooCommerce.',
+                    type: 'PLUGIN / PRODUKT',
+                    description:
+                        'WordPress-Plugin zum Erstellen und Verkaufen individueller digitaler Produkt-Bundles über WooCommerce.',
                     technologies: 'WordPress · PHP · JavaScript · WooCommerce',
                 },
-                photoOptimizer: {
-                    title: 'Photo Optimizer',
-                    description: 'Ein WordPress-Plugin zur Optimierung von Website-Bildern und Verbesserung der Medien-Performance.',
+
+                notarhub: {
+                    title: 'NotarHub',
+                    type: 'WEBSITE / AGENTURPROJEKT',
+                    description:
+                        'Umfassende Weiterentwicklung einer professionellen WordPress-Plattform für den deutschen Notariatsbereich.',
+                    technologies: 'WordPress · PHP · JavaScript · REST API',
+                },
+
+                ews: {
+                    title: 'Ewald W. Schneider',
+                    type: 'WEBSITE / DIREKTKUNDE',
+                    description:
+                        'Komplette Entwicklung einer Unternehmenswebsite für eine deutsche Beratungsgesellschaft.',
                     technologies: 'WordPress · PHP · JavaScript',
                 },
-                engelApotheke: {
-                    title: 'Engel Apotheke Naunhof',
-                    description: 'Responsive Umsetzung einer WordPress-Website nach vorgegebenem Design inklusive Frontend-Entwicklung und Qualitätssicherung.',
-                    technologies: 'WordPress · Elementor · CSS · JavaScript',
+
+                padeffke: {
+                    title: 'Bäckerei Padeffke',
+                    type: 'WEBSITE / AGENTURPROJEKT',
+                    description:
+                        'Komplette Entwicklung der Website für eine etablierte deutsche Bäckereigruppe.',
+                    technologies: 'WordPress · PHP · JavaScript',
                 },
             },
+            viewAll: 'Alle Projekte ansehen →',
         },
-        services: {
-            title: 'Was ich mache',
-            wordpress: {
-                title: 'WordPress-Entwicklung',
-                description: 'Individuelle Websites, Plugins und technische Lösungen mit Fokus auf Performance, Wartbarkeit und konkrete Geschäftsanforderungen.',
-            },
-            dotnet: {
-                title: '.NET & Webanwendungen',
-                description: 'Webanwendungen und APIs mit C#, ASP.NET Core und modernen Frontend-Technologien.',
-            },
+        testimonials: {
+            label: 'Was Kunden sagen',
         },
         experience: {
             title: 'Erfahrung & Kunden',
