@@ -1,0 +1,115 @@
+.contact-page,
+.contact-form-section {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+}
+
+.contact-page {
+    padding: 100px 0 50px;
+}
+
+.contact-intro {
+    max-width: 760px;
+}
+
+    .contact-intro > span {
+        display: block;
+        margin-bottom: 18px;
+        color: var(--color-brown);
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .contact-intro h1 {
+        margin: 0 0 28px;
+        color: var(--color-blue);
+        font-size: clamp(52px, 6vw, 76px);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .contact-intro p {
+        margin: 0;
+        color: var(--color-blue);
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+.contact-form-section {
+    padding: 20px 0 100px;
+}
+
+    .contact-form-section form {
+        max-width: 760px;
+    }
+
+        .contact-form-section form > div {
+            margin-bottom: 32px;
+        }
+
+    .contact-form-section label {
+        display: block;
+        margin-bottom: 10px;
+        color: var(--color-brown);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+    }
+
+    .contact-form-section input,
+    .contact-form-section textarea {
+        width: 100%;
+        padding: 14px 0;
+        border: 0;
+        border-bottom: 1px solid rgba(15, 42, 68, 0.35);
+        background: transparent;
+        color: var(--color-blue);
+        font: inherit;
+        font-size: 18px;
+        outline: none;
+    }
+
+    .contact-form-section textarea {
+        min-height: 140px;
+        resize: vertical;
+    }
+
+        .contact-form-section input:focus,
+        .contact-form-section textarea:focus {
+            border-bottom-color: var(--color-brown);
+        }
+
+    .contact-form-section button {
+        padding: 14px 28px;
+        border: 0;
+        background: var(--color-brown);
+        color: var(--color-cream);
+        font: inherit;
+        font-size: 17px;
+        font-weight: 700;
+        cursor: pointer;
+    }
+
+.contact-success {
+    margin-top: 24px;
+    color: var(--color-blue);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.contact-error {
+    margin-top: 24px;
+    color: var(--color-brown);
+    font-size: 19px;
+    font-weight: 700;
+}
+
+.contact-extra-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}

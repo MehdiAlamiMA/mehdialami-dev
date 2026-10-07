@@ -1,0 +1,114 @@
+.services-page-hero {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 100px 0 90px;
+}
+
+    .services-page-hero > span {
+        display: block;
+        margin-bottom: 18px;
+        color: var(--color-brown);
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .services-page-hero h1 {
+        margin: 0 0 28px;
+        color: var(--color-blue);
+        font-size: clamp(52px, 6vw, 76px);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .services-page-hero p {
+        max-width: 680px;
+        margin: 0;
+        color: var(--color-blue);
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+.service-page-item {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 70px 0;
+    border-top: 1px solid rgba(15, 42, 68, 0.18);
+}
+
+.service-page-number {
+    margin-bottom: 30px;
+    color: var(--color-brown);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.service-page-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    column-gap: 100px;
+}
+
+.service-page-heading span {
+    display: block;
+    margin-bottom: 12px;
+    color: var(--color-brown);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.service-page-heading h2 {
+    margin: 0;
+    color: var(--color-blue);
+    font-size: clamp(36px, 4vw, 52px);
+    line-height: 1.1;
+}
+
+.service-page-details p {
+    max-width: 620px;
+    margin: 0 0 30px;
+    color: var(--color-blue);
+    font-size: 19px;
+    line-height: 1.65;
+}
+
+.service-page-meta {
+    color: var(--color-brown);
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .services-page-hero,
+    .service-page-item {
+        width: calc(100% - 40px);
+    }
+
+    .services-page-hero {
+        padding: 70px 0 60px;
+    }
+
+    .service-page-content {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 28px;
+    }
+
+    .service-page-item {
+        padding: 55px 0;
+    }
+
+    .service-page-number {
+        margin-bottom: 24px;
+    }
+
+    .service-page-heading h2 {
+        font-size: 36px;
+    }
+
+    .service-page-details p {
+        font-size: 18px;
+    }
+}

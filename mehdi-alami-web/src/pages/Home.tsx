@@ -8,44 +8,46 @@ import padeffkeImage from '../assets/projects/padeffke.jpg'
 
 const testimonials = [
     {
-        text: 'Die Zusammenarbeit mit Mehdi Alami ist sehr effizient und konstruktiv. Er arbeitet sorgsam und nach Zeitplan und kommuniziert gut. Wir haben schon einige Projekte zusammen umgesetzt und sind sehr zufrieden.',
-        author: 'Noël Girstmair',
-        company: 'webundso GmbH',
-    },
-    {
         text: 'Mehdi unterstützt uns seit einiger Zeit erfolgreich als Freelancer im Bereich PHP und WordPress. Er hat uns bei zahlreichen Anpassungen und Erweiterungen von Features geholfen. Seine Arbeitsweise ist zuverlässig, und er erledigt Aufgaben sorgfältig und termingerecht. Hervorzuheben sind seine Erreichbarkeit, Kommunikationsfähigkeit und Transparenz. Bei Problemen ist Mehdi stets ansprechbar und recherchiert praktikable Lösungen. Wir schätzen ihn sowohl fachlich als auch menschlich.',
         author: 'Steve Günther',
         company: 'dpa-infocom GmbH',
-    },
-    {
-        text: 'Herr Alami hat ein WordPress Plugin für uns entwickelt und programmiert. Die Arbeiten wurden zu unserer vollsten Zufriedenheit ausgeführt, die Kommunikation und Beratung ist freundlich und fachmännisch. Wir haben bei Herrn Alami Folgeprojekte in Auftrag gegeben.',
-        author: 'Daniel Nagel',
-        company: 'Welcome Media Internet GbR',
-    },
-    {
-        text: 'Wir haben Mehdi Alami als sehr zuverlässigen und äusserst korrekten und freundlichen Partner kennen gelernt. Als ein Tattoostudio in Zürich mit unseren spezial Wünschen können wir immer auf Ihn zählen schnell und Pragmatisch setzt er unsere Wünsche um. Wir empfehlen Mehdi Alami sehr, stehen voll und ganz hinter seiner Arbeit und Kompetenz.',
-        author: 'Ivan Muñoz Martinez',
-        company: 'Bad Habits GmbH',
-    },
-    {
-        text: 'Es hat alles super geklappt und wir sind sehr zufrieden mit der Arbeit und dem Ergebnis! Alles sehr persönlich & unkompliziert. Herr Alami denkt mit und findet für jedes Problem eine Lösung! Kann ich nur empfehlen...',
-        author: 'Mac Messerschmidt',
-        company: 'Drop In Surfcamp Portugal',
-    },
-    {
-        text: 'Sehr fix, gute Arbeit, schnelle Umsetzung, erkennt Probleme und findet Lösungen.',
-        author: 'Ralf Schmitz',
-        company: 'bundesgeschäftsstelle sicher-stark',
     },
     {
         text: 'Mehdi hat unseren Konfigurator weiterentwickelt und mit seinen Skills auf ein beeindruckendes neues Level gebracht. Trotz Remote Work hatten wir eine fantastische Zusammenarbeit mit ihm, waren begeistert von seinem Einsatz sowie der Detailversessenheit und können ihn gerne weiterempfehlen. Besonders im Backendbereich ist er ein absoluter Crack und denkt den oft gewünschten Schritt weiter bzw. voraus.',
         author: 'Elias',
         company: 'DesignYourBike',
     },
+    
+    {
+        text: 'Mehdi is a highly skilled software developer who delivers quality code.He has a positive attitude and worked well in a team taking the lead.He works hard to meet tight deadlines.',
+        author: 'Program Manager',
+        company: 'V12Software',
+    },
+    
     {
         text: 'Herr Alami war bei der Projektumsetzung sehr gewissenhaft und hat die Arbeiten selbstständig zu unserer vollsten Zufriedenheit erledigt. Immer wieder gerne.',
         author: 'Denis Satler',
         company: 'Zarenga GmbH',
+    },
+    {
+        text: 'Es hat alles super geklappt und wir sind sehr zufrieden mit der Arbeit und dem Ergebnis! Alles sehr persönlich & unkompliziert. Herr Alami denkt mit und findet für jedes Problem eine Lösung! Kann ich nur empfehlen...',
+        author: 'Mac Messerschmidt',
+        company: 'Drop In Surfcamp Portugal',
+    },      
+    {
+        text: 'Wir haben Mehdi Alami als sehr zuverlässigen und äusserst korrekten und freundlichen Partner kennen gelernt. Als ein Tattoostudio in Zürich mit unseren spezial Wünschen können wir immer auf Ihn zählen schnell und Pragmatisch setzt er unsere Wünsche um. Wir empfehlen Mehdi Alami sehr, stehen voll und ganz hinter seiner Arbeit und Kompetenz.',
+        author: 'Ivan Muñoz Martinez',
+        company: 'Bad Habits GmbH',
+    },  
+    {
+        text: 'Sehr fix, gute Arbeit, schnelle Umsetzung, erkennt Probleme und findet Lösungen.',
+        author: 'Ralf Schmitz',
+        company: 'bundesgeschäftsstelle sicher-stark',
+    },
+    {
+        text: 'Die Zusammenarbeit mit Mehdi Alami ist sehr effizient und konstruktiv. Er arbeitet sorgsam und nach Zeitplan und kommuniziert gut. Wir haben schon einige Projekte zusammen umgesetzt und sind sehr zufrieden.',
+        author: 'Noël Girstmair',
+        company: 'webundso GmbH',
     },
 ]
 
@@ -90,12 +92,18 @@ function Home() {
                         <article className="service-card">
                             <span className="service-number">01</span>
                             <h3>{t('home.services.build.title')}</h3>
+                            <span className="service-meta">
+                                {t('home.services.build.meta')}
+                            </span>
                             <p>{t('home.services.build.description')}</p>
                         </article>
 
                         <article className="service-card">
                             <span className="service-number">02</span>
                             <h3>{t('home.services.improve.title')}</h3>
+                            <span className="service-meta">
+                                {t('home.services.improve.meta')}
+                            </span>
                             <p>{t('home.services.improve.description')}</p>
                         </article>
 
@@ -111,6 +119,9 @@ function Home() {
                         <article className="service-card">
                             <span className="service-number">04</span>
                             <h3>{t('home.services.maintain.title')}</h3>
+                            <span className="service-meta">
+                                {t('home.services.maintain.meta')}
+                            </span>
                             <p>{t('home.services.maintain.description')}</p>
                         </article>
                     </div>

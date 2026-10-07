@@ -6,7 +6,7 @@ function LanguageSwitcher() {
     const languages = [
         { code: 'en', label: 'EN' },
         { code: 'de', label: 'DE' },
-        { code: 'pt-BR', label: 'PT' },
+        { code: 'pt-BR', label: 'BR' },
     ]
 
     const currentLanguage = i18n.resolvedLanguage || i18n.language
@@ -17,7 +17,7 @@ function LanguageSwitcher() {
     }
 
     return (
-        <div>
+        <div className="language-switcher">
             {languages
                 .filter((language) => language.code !== currentLanguage)
                 .map((language) => (

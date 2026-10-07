@@ -4,6 +4,7 @@
     font-family: 'Titillium Web', sans-serif;
     --color-blue: #0F2A44;
     --color-cream: #FBF9F5;
+    --color-cream-dark: #EFEAE1;
     /*--color-brown: #8B6A4E;*/
     --color-brown: #A66A3F;
     --section-space: 80px;
@@ -36,4 +37,11 @@ button,
 input,
 textarea {
     font: inherit;
+}
+
+@media (max-width: 768px) {
+    .site-footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }

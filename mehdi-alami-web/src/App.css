@@ -1,13 +1,28 @@
 header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: var(--color-cream);
+    border-bottom: 1px solid rgba(15, 42, 68, 0.12);
+}
+
+.header-inner {
     width: min(1200px, calc(100% - 80px));
-    margin: 0 auto;
     min-height: 82px;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 40px;
-    border-bottom: 1px solid rgba(15, 42, 68, 0.12);
 }
+
+    .header-inner > a {
+        font-size: 28px;
+        font-weight: 700;
+        letter-spacing: -0.6px;
+        color: var(--color-blue);
+    }
 
     header nav {
         display: flex;
@@ -20,12 +35,22 @@ header {
             font-weight: 600;
         }
 
-    header > a {
-        font-size: 24px;
-        font-weight: 700;
-        letter-spacing: -0.5px;
-        color: var(--color-blue);
-    }
+        header nav a {
+            padding: 8px 12px;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.2s ease;
+        }
+
+            header nav a:hover {
+                background-color: var(--color-brown);
+                color: var(--color-cream);
+            }
+
+            header nav a.active {
+                background-color: var(--color-brown);
+                color: var(--color-cream);
+            }
 
     header > div {
         display: flex;
@@ -42,6 +67,11 @@ header {
             cursor: pointer;
         }
 
+.language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
 
 /* HERO */
 
@@ -112,7 +142,7 @@ header {
 
 /* GENERAL SECTIONS */
 
-main > section:not(.hero) {
+main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-background) {
     width: min(1200px, calc(100% - 80px));
     margin: 0 auto;
 }
@@ -236,7 +266,7 @@ main > section:not(.hero) {
         display: block;
         width: 100%;
         aspect-ratio: 16 / 10;
-        object-fit: cover;
+        object-fit: contain;
         object-position: top;
         border-bottom: 3px solid var(--color-brown);
     }

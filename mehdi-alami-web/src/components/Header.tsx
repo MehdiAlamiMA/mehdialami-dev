@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from './LanguageSwitcher'
 
@@ -7,15 +7,19 @@ function Header() {
 
     return (
         <header>
-            <Link to="/">Mehdi Alami</Link>
+            <div className="header-inner">
+                <Link to="/">Mehdi Alami</Link>
 
-            <nav>
-                <Link to="/projects">{t('navigation.projects')}</Link>
-                <Link to="/services">{t('navigation.services')}</Link>
-                <Link to="/about">{t('navigation.about')}</Link>
-                <Link to="/contact">{t('navigation.contact')}</Link>
-            </nav>
-            <LanguageSwitcher />
+                <nav>
+                    <nav>
+                        <NavLink to="/projects">{t('navigation.projects')}</NavLink>
+                        <NavLink to="/services">{t('navigation.services')}</NavLink>
+                        <NavLink to="/about">{t('navigation.about')}</NavLink>
+                        <NavLink to="/contact">{t('navigation.contact')}</NavLink>
+                    </nav>
+                </nav>
+                <LanguageSwitcher />
+            </div>  
         </header>
     )
 }

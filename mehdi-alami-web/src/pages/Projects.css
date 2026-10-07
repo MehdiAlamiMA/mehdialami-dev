@@ -1,0 +1,120 @@
+.projects-hero {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 100px 0 90px;
+}
+
+    .projects-hero > span {
+        display: block;
+        margin-bottom: 18px;
+        color: var(--color-brown);
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .projects-hero h1 {
+        margin: 0 0 28px;
+        color: var(--color-blue);
+        font-size: clamp(52px, 6vw, 76px);
+        font-weight: 700;
+        line-height: 1;
+        letter-spacing: -2px;
+    }
+
+    .projects-hero p {
+        max-width: 680px;
+        margin: 0;
+        color: var(--color-blue);
+        font-size: 21px;
+        line-height: 1.6;
+    }
+
+/* PROJECTS LIST */
+
+.projects-list {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.project-detail {
+    padding: 70px 0;
+    border-top: 1px solid rgba(15, 42, 68, 0.18);
+}
+
+.project-detail-number {
+    margin-bottom: 24px;
+    color: var(--color-brown);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.project-detail-image {
+    margin-bottom: 40px;
+}
+
+    .project-detail-image img {
+        display: block;
+        width: 100%;
+        aspect-ratio: 16 / 8;
+        object-fit: cover;
+        object-position: top;
+        border-bottom: 3px solid var(--color-brown);
+    }
+
+.project-detail-content {
+    display: grid;
+    grid-template-columns: 1.25fr 0.75fr;
+    column-gap: 80px;
+}
+
+.project-detail-type {
+    grid-column: 1 / -1;
+    margin-bottom: 16px;
+    color: var(--color-brown);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+}
+
+.project-detail-content h2 {
+    grid-column: 1;
+    margin: 0 0 20px;
+    color: var(--color-blue);
+    font-size: 36px;
+    line-height: 1.15;
+}
+
+.project-detail-description {
+    grid-column: 1;
+    margin: 0;
+    max-width: 650px;
+    font-size: 19px;
+    line-height: 1.6;
+}
+
+.project-detail-info {
+    grid-column: 2;
+    grid-row: 2 / span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+    .project-detail-info span {
+        display: block;
+        margin-bottom: 7px;
+        color: var(--color-brown);
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+    }
+
+    .project-detail-info p {
+        margin: 0;
+        color: var(--color-blue);
+        font-size: 16px;
+        line-height: 1.5;
+    }
+

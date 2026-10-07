@@ -18,12 +18,14 @@ const de = {
 
             build: {
                 title: 'Entwickeln',
+                meta: 'Websites · WooCommerce · Webanwendungen',
                 description:
                     'Websites, WooCommerce-Lösungen und Webanwendungen, die auf konkrete Geschäftsanforderungen zugeschnitten sind.',
             },
 
             improve: {
                 title: 'Optimieren',
+                meta: 'Performance · Technisches SEO · UX',
                 description:
                     'Performance, Funktionen und technische UX bestehender Websites und Anwendungen verbessern.',
             },
@@ -32,13 +34,14 @@ const de = {
                 title: 'Automatisieren & integrieren',
                 meta: 'APIs · KI-Integrationen · Externe Dienste',
                 description:
-                    'APIs, externe Dienste und KI-gestützte Funktionen, die Abläufe vereinfachen und Websites funktional erweitern.',
+                    'Ich verbinde Tools und automatisiere Prozesse, um die Möglichkeiten Ihres Unternehmens zu erweitern.',
             },
 
             maintain: {
                 title: 'Betreuen & weiterentwickeln',
+                meta: 'Wartung · Fehlerbehebung · Weiterentwicklung',
                 description:
-                    'Wartung, Fehlerbehebung und kontinuierliche Weiterentwicklung für zuverlässige und aktuelle digitale Lösungen.',
+                    'Ich halte Ihre digitalen Lösungen zuverlässig, aktuell und bereit für die Weiterentwicklung.',
             },
         },
         projects: {
@@ -97,37 +100,158 @@ const de = {
     },
 
     projects: {
+        label: 'Ausgewählte Arbeiten',
         title: 'Projekte',
-        intro: 'Ausgewählte Webentwicklungsprojekte, Kundenprojekte und technische Produkte.',
+        intro: 'Eine Auswahl an Produkten, Websites und technischen Lösungen für Kunden, Agenturen und eigene Projekte.',
+        role: 'Meine Rolle',
+        technologies: 'Technologien',
+
+        items: {
+            digitalBundleBuilder: {
+                type: 'PLUGIN / EIGENES PRODUKT',
+                title: 'WooCommerce Digital Bundle Builder',
+                description:
+                    'Ein WordPress-Plugin zum Erstellen und Verkaufen individueller digitaler Produkt-Bundles über WooCommerce.',
+                role:
+                    'Plugin-Entwicklung · Architektur · Admin-Oberfläche',
+                technologies:
+                    'WordPress · PHP · JavaScript · WooCommerce',
+            },
+            photoOptimizer: {
+                type: 'PLUGIN / EIGENES PRODUKT',
+                title: 'Photo Optimizer',
+                description:
+                    'WordPress-Plugin zur Bildoptimierung mit externen Diensten und KI-gestützter Bildanalyse.',
+                role:
+                    'Plugin-Entwicklung · API-Integration · KI-Integration',
+                technologies:
+                    'WordPress · PHP · JavaScript · Cloudinary · Google Vision',
+            },
+            notarhub: {
+                type: 'WEBSITE / AGENTURPROJEKT',
+                title: 'NotarHub',
+                description:
+                    'Umfassende Weiterentwicklung einer professionellen WordPress-Plattform für den deutschen Notariatsbereich.',
+                role:
+                    'WordPress-Entwicklung · Frontend-Umsetzung · Integrationen',
+                technologies:
+                    'WordPress · PHP · JavaScript · REST API',
+            },
+            ews: {
+                type: 'WEBSITE / DIREKTKUNDE',
+                title: 'Ewald W. Schneider',
+                description:
+                    'Komplette Entwicklung einer Unternehmenswebsite für eine deutsche Beratungsgesellschaft.',
+                role:
+                    'WordPress-Entwicklung · Frontend-Umsetzung · Individuelle Entwicklung',
+                technologies:
+                    'WordPress · PHP · JavaScript',
+            },
+            padeffke: {
+                type: 'WEBSITE / AGENTURPROJEKT',
+                title: 'Bäckerei Padeffke',
+                description:
+                    'Komplette Entwicklung der Website für eine etablierte deutsche Bäckereigruppe.',
+                role:
+                    'WordPress-Entwicklung · Frontend-Umsetzung · Individuelle Entwicklung',
+                technologies:
+                    'WordPress · PHP · JavaScript',
+            },
+        },
+        cta: {
+            text: 'Haben Sie ein Projekt im Kopf?',
+            link: 'Lassen Sie uns sprechen',
+        },
     },
 
-    services: {
-        title: 'Leistungen',
-        intro: 'Webentwicklung mit Fokus auf WordPress, .NET und moderne Webanwendungen.',
+    servicesPage: {
+        label: 'Leistungen',
+        title: 'Wie ich Sie unterstützen kann',
+        intro:
+            'Entwicklung, Optimierung und Weiterentwicklung von Websites und Webanwendungen mit Fokus auf zuverlässige und wartbare Lösungen.',
+        items: {
+            build: {
+                label: 'Entwicklung',
+                title: 'Websites und Webanwendungen',
+                description:
+                    'Ich entwickle Websites, Onlineshops und Webanwendungen passend zu den Anforderungen des Projekts – auf einer soliden technischen Basis, die sich langfristig weiterentwickeln lässt.',
+                meta:
+                    'WordPress · WooCommerce · React · TypeScript · ASP.NET Core',
+            },
+            improve: {
+                label: 'Optimierung',
+                title: 'Performance und Nutzererlebnis',
+                description:
+                    'Ich optimiere bestehende Websites, damit sie schneller, übersichtlicher und effektiver für Nutzer und Suchmaschinen werden.',
+                meta:
+                    'Performance · Technisches SEO · UX · Optimierung',
+            },
+            integrate: {
+                label: 'Automatisieren & integrieren',
+                title: 'APIs, Automatisierung und KI',
+                description:
+                    'Ich verbinde Systeme und Dienste, um Prozesse zu automatisieren, neue Funktionen zu integrieren und KI dort einzusetzen, wo sie einen konkreten Mehrwert bietet.',
+                meta:
+                    'APIs · KI-Integrationen · Externe Dienste · Automatisierung',
+            },
+            maintain: {
+                label: 'Warten & weiterentwickeln',
+                title: 'Support und kontinuierliche Weiterentwicklung',
+                description:
+                    'Ich halte Websites und Webanwendungen zuverlässig, aktuell und bereit für die Weiterentwicklung bei neuen Anforderungen.',
+                meta:
+                    'Wartung · Fehlerbehebung · Verbesserungen · Weiterentwicklung',
+            },
+        },
+        
+      
     },
 
-    about: {
-        title: 'Über mich',
-        intro: 'Ich bin Webentwickler mit Sitz in Rio de Janeiro und arbeite remote mit Unternehmen und digitalen Teams in Europa und Brasilien.',
-        experience: {
-            title: 'Erfahrung',
-            text: 'Ich arbeite hauptsächlich mit WordPress, PHP und JavaScript sowie mit C# und .NET für Webanwendungen und APIs.',
+    aboutPage: {
+        label: 'Über mich',
+        highlight0: 'Entwicklung',
+        titleLine1: 'mit',
+        highlight1: 'Erfahrung',
+        titleLine2: 'und',
+        titleLine3: 'einem breiteren',
+        highlight2: 'Blick',
+        intro: 'Ich bin Webentwickler mit Sitz in Rio de Janeiro und arbeite remote mit Unternehmen, Agenturen und digitalen Teams in Europa und Brasilien.',
+        approach: {
+            label: 'Wie ich arbeite',
+            title: 'Vom Bedarf zur passenden Lösung.',
+            text1:
+                'Am Anfang stehen für mich das Problem, der Kontext und die Frage, was tatsächlich gelöst werden muss. Die Technologie kommt danach.',
+            text2:
+                'Ich entwickle klare und zuverlässige Lösungen, vermeide unnötige Komplexität und denke Wartung und Weiterentwicklung von Anfang an mit.',
+        },
+        background: {
+            label: 'Hintergrund',
+            title: 'Erfahrung über Märkte und Technologien hinweg.',
+            text1:
+                'Meine Erfahrung habe ich vor allem in der Zusammenarbeit mit deutschen Unternehmen und Agenturen aufgebaut – bei der Entwicklung und Betreuung von Websites, Plattformen und WordPress-Lösungen für reale Kundenprojekte.',
+            text2:
+                'Heute erweitere ich diesen Weg in Richtung Fullstack-Entwicklung mit TypeScript, React, C# und .NET und verbinde diese technische Basis mit meiner langjährigen praktischen Projekterfahrung.',
         },
         stack: {
-            title: 'Technologie-Stack',
-            technologies: 'WordPress · PHP · JavaScript · TypeScript · React · C# · .NET · REST APIs · Git',
+            label: 'Technologien',
+            title: 'Werkzeuge, mit denen ich entwickle.',
         },
     },
 
-    contact: {
-        title: 'Kontakt',
-        intro: 'Sie haben ein Projekt oder eine Zusammenarbeit im Sinn? Schreiben Sie mir.',
+    contactPage: {
+        label: 'Kontakt',
+        title: 'Lassen Sie uns über Ihr Projekt sprechen.',
+        intro:
+            'Sie haben ein Projekt, eine bestehende Website oder eine technische Herausforderung? Schreiben Sie mir.',
         form: {
-            name: 'Name',
-            email: 'E-Mail',
-            message: 'Nachricht',
+                name: 'Name',
+                email: 'E-Mail',
+                message: 'Nachricht',
             submit: 'Nachricht senden',
-        },
+            success: 'Ihre Nachricht wurde erfolgreich gesendet.',
+            error: 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.',
+            },
+        
     },
 
 }

@@ -1,0 +1,214 @@
+.about-hero {
+    width: 100%;
+    background: var(--color-blue);
+}
+
+.about-hero-inner {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 100px 0 90px;
+}
+
+.about-hero-label {
+    display: block;
+    margin-bottom: 24px;
+    color: var(--color-brown);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.about-hero h1 {
+    max-width: 1050px;
+    margin: 0 0 38px;
+    color: var(--color-cream);
+    font-size: clamp(52px, 6vw, 76px);
+    font-weight: 700;
+    line-height: 1.05;
+    letter-spacing: -2px;
+}
+
+    .about-hero h1 > span {
+        display: block;
+    }
+
+    .about-hero h1 strong {
+        color: var(--color-brown);
+        font-weight: 700;
+    }
+
+.about-hero p {
+    max-width: 720px;
+    margin: 0;
+    color: var(--color-cream);
+    font-size: 21px;
+    line-height: 1.6;
+}
+
+.about-approach {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.about-approach-label {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    color: var(--color-brown);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.about-approach-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    column-gap: 100px;
+}
+
+    .about-approach-content h2 {
+        margin: 0;
+        max-width: 480px;
+        color: var(--color-blue);
+        font-size: clamp(36px, 4vw, 52px);
+        line-height: 1.1;
+    }
+
+.about-approach-text {
+    max-width: 620px;
+}
+
+    .about-approach-text p {
+        margin: 0 0 24px;
+        color: var(--color-blue);
+        font-size: 19px;
+        line-height: 1.65;
+    }
+
+        .about-approach-text p:last-child {
+            margin-bottom: 0;
+        }
+
+.about-background {
+    width: 100%;
+    padding: 90px 0;
+    background: var(--color-cream-dark);
+}
+
+.about-background-label,
+.about-background-content {
+    width: min(1200px, calc(100% - 80px));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-background-label {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    color: var(--color-brown);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.about-background-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    column-gap: 100px;
+}
+
+    .about-background-content h2 {
+        margin: 0;
+        max-width: 480px;
+        color: var(--color-blue);
+        font-size: clamp(36px, 4vw, 52px);
+        line-height: 1.1;
+    }
+
+.about-background-text {
+    max-width: 620px;
+}
+
+    .about-background-text p {
+        margin: 0 0 24px;
+        color: var(--color-blue);
+        font-size: 19px;
+        line-height: 1.65;
+    }
+
+        .about-background-text p:last-child {
+            margin-bottom: 0;
+        }
+.about-stack {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 90px 0;
+}
+
+.about-stack-label {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 40px;
+    color: var(--color-brown);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.about-stack-content {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    column-gap: 100px;
+}
+
+    .about-stack-content h2 {
+        margin: 0;
+        max-width: 480px;
+        color: var(--color-blue);
+        font-size: clamp(36px, 4vw, 52px);
+        line-height: 1.1;
+    }
+
+.about-stack-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 12px;
+}
+
+    .about-stack-list span {
+        padding: 8px 14px;
+        border: 1px solid rgba(15, 42, 68, 0.3);
+        color: var(--color-blue);
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+@media (max-width: 768px) {
+    .about-approach,
+    .about-background {
+        padding: 60px 0;
+    }
+
+    .about-approach-content,
+    .about-background-content {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 32px;
+    }
+
+        .about-approach-content h2,
+        .about-background-content h2 {
+            max-width: none;
+            font-size: 36px;
+        }
+
+    .about-approach-text,
+    .about-background-text {
+        max-width: none;
+    }
+}

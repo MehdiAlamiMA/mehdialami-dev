@@ -1,0 +1,44 @@
+.projects-cta {
+    width: 100%;
+    background: var(--color-brown);
+}
+
+.projects-cta-inner {
+    width: min(1200px, calc(100% - 80px));
+    margin: 0 auto;
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.projects-cta p {
+    max-width: 600px;
+    margin: 0;
+    color: var(--color-cream);
+    font-size: clamp(30px, 4vw, 46px);
+    font-weight: 700;
+    line-height: 1.15;
+}
+
+.projects-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    color: var(--color-cream);
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .projects-cta a span {
+        color: var(--color-cream);
+        font-size: 28px;
+    }
+
+@media (max-width: 768px) {
+    .projects-cta a {
+        white-space: nowrap;
+    }
+}
