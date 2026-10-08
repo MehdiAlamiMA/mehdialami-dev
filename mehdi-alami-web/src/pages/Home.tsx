@@ -2,7 +2,7 @@ import { useTranslation } from 'react-i18next'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import bundleBuilderImage from '../assets/projects/bundle-builder.jpg'
-import notarhubImage from '../assets/projects/notarhub.jpg'
+import notarhubImage from '../assets/projects/Notarhub.jpg'
 import ewsImage from '../assets/projects/ews.jpg'
 import padeffkeImage from '../assets/projects/padeffke.jpg'
 
