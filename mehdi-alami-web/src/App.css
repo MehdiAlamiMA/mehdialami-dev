@@ -24,48 +24,43 @@ header {
         color: var(--color-blue);
     }
 
-    header nav {
-        display: flex;
-        align-items: center;
-        gap: 40px;
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+    header nav a {
+        font-size: 18px;
+        font-weight: 600;
     }
 
-        header nav a {
-            font-size: 18px;
-            font-weight: 600;
-        }
-
-        header nav a {
-            padding: 8px 12px;
-            font-size: 18px;
-            font-weight: 600;
-            transition: background-color 0.2s ease;
-        }
-
-            header nav a:hover {
-                background-color: var(--color-brown);
-                color: var(--color-cream);
-            }
-
-            header nav a.active {
-                background-color: var(--color-brown);
-                color: var(--color-cream);
-            }
-
-    header > div {
-        display: flex;
-        gap: 8px;
+    header nav a {
+        padding: 8px 12px;
+        font-size: 18px;
+        font-weight: 600;
+        transition: background-color 0.2s ease;
     }
 
-        header > div button {
-            padding: 0;
-            border: 0;
-            background: none;
-            color: var(--color-blue);
-            font-size: 15px;
-            font-weight: 600;
-            cursor: pointer;
+        header nav a:hover {
+            background-color: var(--color-brown);
+            color: var(--color-cream);
         }
+
+        header nav a.active {
+            background-color: var(--color-brown);
+            color: var(--color-cream);
+        }
+
+.language-switcher button {
+    padding: 0;
+    border: 0;
+    background: none;
+    color: var(--color-blue);
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
 
 .language-switcher {
     display: flex;
@@ -529,83 +524,168 @@ main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-backgro
 }
 
 
-/* MOBILE */
+/* RESPONSIVE — TABLET */
 
-@media (max-width: 768px) {
-
-    header {
-        width: calc(100% - 40px);
-        min-height: auto;
-        padding: 24px 0;
-        flex-wrap: wrap;
+@media (max-width: 1024px) {
+    .header-inner {
+        width: calc(100% - 48px);
         gap: 20px;
     }
 
-        header nav {
-            order: 3;
-            width: 100%;
-            justify-content: space-between;
-            gap: 12px;
-        }
-
-            header nav a {
-                font-size: 16px;
-            }
-
-
-    /* Hero */
-
-    .hero {
-        width: 100%;
-        min-height: 560px;
-        padding-left: 20px;
-        padding-right: 20px;
+    header nav {
+        gap: 12px;
     }
 
-        .hero h1 {
-            font-size: 48px;
-            letter-spacing: -1px;
+        header nav a {
+            font-size: 16px;
+            padding: 8px;
         }
 
-        .hero > p {
-            font-size: 18px;
+    main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-background) {
+        width: calc(100% - 48px);
+    }
+
+    .intro-section {
+        padding: 44px 32px;
+    }
+
+    .testimonials-section {
+        padding: 64px 32px;
+    }
+
+    .about-contact-section {
+        gap: 32px;
+    }
+
+    .footer-inner {
+        width: calc(100% - 48px);
+    }
+}
+
+/* RESPONSIVE — MOBILE */
+
+@media (max-width: 768px) {
+    header {
+        width: 100%;
+        min-height: 0;
+        padding: 0;
+    }
+
+    .header-inner {
+        width: calc(100% - 32px);
+        min-height: 0;
+        padding: 14px 0 12px;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) auto;
+        column-gap: 12px;
+        row-gap: 14px;
+        align-items: center;
+    }
+
+        .header-inner > a {
+            grid-column: 1;
+            grid-row: 1;
+            font-size: 24px;
+            line-height: 1.1;
+            min-width: 0;
         }
+
+    .language-switcher {
+        grid-column: 2;
+        grid-row: 1;
+        gap: 12px;
+        justify-content: flex-end;
+    }
+
+    header nav {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        gap: 4px;
+        min-width: 0;
+    }
+
+        header nav a {
+            padding: 7px 5px;
+            font-size: 14px;
+            text-align: center;
+            white-space: nowrap;
+        }
+
+    /* Make every homepage section use the available viewport width. */
+    main {
+        width: 100%;
+        min-width: 0;
+    }
+
+        main > section.hero {
+            width: 100%;
+            max-width: none;
+            min-width: 0;
+            min-height: 540px;
+            margin: 0;
+            padding: 64px 20px;
+            box-sizing: border-box;
+        }
+
+    .hero h1 {
+        width: 100%;
+        max-width: 620px;
+        font-size: clamp(34px, 9vw, 48px);
+        letter-spacing: -1px;
+        overflow-wrap: normal;
+    }
+
+    .hero > p {
+        max-width: 520px;
+        margin-top: 26px;
+        font-size: 17px;
+    }
 
     .hero-actions {
         flex-direction: column;
         width: 100%;
         max-width: 320px;
+        gap: 12px;
+        margin-top: 32px;
     }
 
         .hero-actions a {
             text-align: center;
         }
 
-
-    /* What I do */
+    main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-background) {
+        width: calc(100% - 40px);
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
 
     .services-section {
-        padding-top: 60px;
-        padding-bottom: 60px;
+        padding-top: 56px;
+        padding-bottom: 0;
     }
 
         .services-section > h2 {
-            margin: 0 0 30px;
-            font-size: 34px;
+            margin-bottom: 28px;
+            font-size: 32px;
         }
 
     .intro-section {
         width: 100%;
-        margin: 0;
-        padding: 40px 24px;
+        padding: 24px;
+        box-sizing: border-box;
     }
 
     .services-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: minmax(0, 1fr);
     }
 
     .service-card {
-        padding: 28px 0;
+        padding: 26px 0;
     }
 
         .service-card:nth-child(odd) {
@@ -630,12 +710,9 @@ main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-backgro
     }
 
     .intro-link {
-        margin-top: 32px;
+        margin-top: 28px;
         margin-left: 0;
     }
-
-
-    /* Projects */
 
     .selected-projects {
         padding-top: 60px;
@@ -648,29 +725,22 @@ main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-backgro
         }
 
     .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 50px;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 48px;
     }
 
         .projects-grid article {
             padding: 0;
-            border-right: 0;
-            border-bottom: 0;
+            border: 0;
         }
 
-            .projects-grid article:last-child {
-                border-bottom: 0;
-            }
-
     .projects-link {
-        margin-top: 45px;
+        margin-top: 42px;
     }
 
-
-    /* Testimonials */
-
-    .testimonials-section {
+    main > section.testimonials-section {
         width: 100% !important;
+        max-width: none;
         margin: 0 !important;
         padding: 60px 24px;
     }
@@ -683,37 +753,38 @@ main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-backgro
         font-size: 23px;
     }
 
-
-    /* About + Contact */
-
     .about-contact-section {
-        width: calc(100% - 40px);
+        grid-template-columns: minmax(0, 1fr);
+        gap: 40px;
         padding-top: 60px;
         padding-bottom: 60px;
-        grid-template-columns: 1fr;
-        gap: 45px;
     }
 
     .about-content {
         padding-right: 0;
     }
 
+        .about-content h2 {
+            font-size: 34px;
+        }
+
+        .about-content p {
+            font-size: 17px;
+        }
+
     .contact-cta {
         min-height: 240px;
         padding: 36px 30px;
     }
 
-        .contact-cta span {
-            font-size: 32px;
+        .contact-cta > span {
+            font-size: 30px;
         }
 
         .contact-cta > strong {
-            top: 34px;
-            right: 30px;
+            top: 32px;
+            right: 28px;
         }
-
-
-    /* Footer */
 
     .footer-inner {
         width: calc(100% - 40px);
@@ -726,5 +797,28 @@ main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-backgro
     .footer-links {
         flex-wrap: wrap;
         gap: 18px 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    .header-inner {
+        width: calc(100% - 24px);
+    }
+
+        .header-inner > a {
+            font-size: 21px;
+        }
+
+    header nav a {
+        font-size: 12px;
+        padding: 6px 3px;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .intro-section {
+        padding: 20px;
     }
 }
