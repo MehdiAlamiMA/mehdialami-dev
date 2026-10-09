@@ -787,7 +787,7 @@ main > section:not(.hero):not(.projects-cta):not(.about-hero):not(.about-backgro
         }
 
     .footer-inner {
-        width: calc(100% - 40px);
+        width: 100%;
         padding: 35px 0;
         flex-direction: column;
         align-items: flex-start;
