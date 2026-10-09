@@ -189,6 +189,12 @@
     }
 
 @media (max-width: 768px) {
+
+    .about-hero-inner {
+        padding: 50px 0 50px;
+        width: min(1200px, calc(100% - 40px));
+    }
+
     .about-approach,
     .about-background {
         padding: 60px 0;
@@ -211,4 +217,40 @@
     .about-background-text {
         max-width: none;
     }
+
+    .about-hero h1 {
+        font-size: clamp(30px, 8vw, 48px);
+        line-height: 1.15;
+        letter-spacing: -1px;
+        overflow-wrap: anywhere;
+    }
+
+
+    .about-stack {
+        width: calc(100% - 40px);
+        padding: 60px 0;
+    }
+
+    .about-stack-content {
+        grid-template-columns: minmax(0, 1fr);
+        column-gap: 0;
+        row-gap: 30px;
+    }
+
+        .about-stack-content h2 {
+            max-width: 100%;
+            font-size: 36px;
+        }
+
+    .about-stack-list {
+        width: 100%;
+        min-width: 0;
+        gap: 10px;
+    }
+
+        .about-stack-list span {
+            max-width: 100%;
+            font-size: 15px;
+        }
+
 }
