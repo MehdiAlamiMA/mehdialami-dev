@@ -84,6 +84,25 @@ const ptBR = {
         },
         testimonials: {
             label: 'O que os clientes dizem',
+
+            items: {
+                0: "Mehdi trabalha conosco há algum tempo como freelancer especializado em PHP e WordPress. Ele nos ajudou em diversas adaptações e ampliações de funcionalidades. Trabalha de forma confiável, cuidadosa e cumpre os prazos. Destacam-se sua disponibilidade, capacidade de comunicação e transparência. Quando surgem problemas, Mehdi está sempre acessível e busca soluções práticas. Valorizamos tanto sua competência profissional quanto suas qualidades pessoais.",
+
+                1: "Mehdi aprimorou nosso configurador e, com suas habilidades, levou o projeto a um novo patamar. Apesar do trabalho remoto, tivemos uma colaboração fantástica. Ficamos impressionados com sua dedicação e atenção aos detalhes e o recomendamos com satisfação. Ele se destaca especialmente no desenvolvimento backend e costuma pensar um passo à frente.",
+
+                2: "Mehdi é um desenvolvedor de software altamente qualificado, que entrega código de qualidade. Tem uma atitude positiva, trabalha bem em equipe e assume a liderança quando necessário. Dedica-se a cumprir até mesmo os prazos mais apertados.",
+
+                3: "O Sr. Alami demonstrou muito cuidado na execução do projeto e realizou o trabalho de forma independente, atendendo plenamente às nossas expectativas. Teremos prazer em trabalhar com ele novamente.",
+
+                4: "Tudo correu muito bem e estamos muito satisfeitos com o trabalho e o resultado! O atendimento foi muito pessoal e descomplicado. O Sr. Alami pensa de forma proativa e encontra uma solução para cada problema. Recomendo sem hesitar!",
+
+                5: "Conhecemos Mehdi Alami como um parceiro muito confiável, correto e cordial. Como estúdio de tatuagem em Zurique, com necessidades específicas, podemos sempre contar com ele. Ele atende às nossas solicitações com rapidez e praticidade. Recomendamos Mehdi Alami e confiamos plenamente em seu trabalho e competência.",
+
+                6: "Muito ágil, excelente trabalho e implementação rápida. Identifica problemas e encontra soluções.",
+
+                7: "A colaboração com Mehdi Alami é muito eficiente e construtiva. Ele trabalha com cuidado, cumpre os prazos e se comunica bem. Já realizamos vários projetos juntos e estamos muito satisfeitos."
+            },
+
         },
         experience: {
             title: 'Experiência & Clientes',

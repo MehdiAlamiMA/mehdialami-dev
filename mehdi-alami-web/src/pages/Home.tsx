@@ -221,7 +221,7 @@ function Home() {
                         </span>
 
                         <blockquote>
-                            “{testimonial.text}”
+                            “{t(`home.testimonials.items.${testimonialIndex}`)}”
                         </blockquote>
 
                         <p className="testimonial-author">
