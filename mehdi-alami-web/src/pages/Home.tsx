@@ -5,6 +5,8 @@ import bundleBuilderImage from '../assets/projects/bundle-builder.jpg'
 import notarhubImage from '../assets/projects/Notarhub.jpg'
 import ewsImage from '../assets/projects/ews.jpg'
 import padeffkeImage from '../assets/projects/padeffke.jpg'
+import { useLocation } from 'react-router-dom'
+import { routes, type Language } from '../config/routes'
 
 const testimonials = [
     {
@@ -69,6 +71,15 @@ function Home() {
         )
     }
 
+    const { pathname } = useLocation()
+
+    const language: Language =
+        pathname.startsWith('/de/') ? 'de' :
+            pathname.startsWith('/br/') ? 'pt-BR' :
+                'en'
+
+    const links = routes[language]
+
     return (
         <main>
             <section className="hero">
@@ -79,8 +90,8 @@ function Home() {
                 <p>{t('home.hero.description')}</p>
 
                 <div className="hero-actions">
-                    <Link to="/projects">{t('home.hero.projectsButton')}</Link>
-                    <Link to="/contact">{t('home.hero.contactButton')}</Link>
+                    <Link to={links.projects}>{t('home.hero.projectsButton')}</Link>
+                    <Link to={links.contact}>{t('home.hero.contactButton')}</Link>
                 </div>
             </section>
 
@@ -126,7 +137,7 @@ function Home() {
                         </article>
                     </div>
 
-                    <Link to="/services" className="intro-link">
+                    <Link to={links.services} className="intro-link">
                         View services
                     </Link>
                 </div>
@@ -208,7 +219,7 @@ function Home() {
                         </div>
                     </article>
                 </div>
-                <Link to="/projects" className="projects-link">
+                <Link to={links.projects} className="projects-link">
                     {t('home.projects.viewAll')}
                 </Link>
             </section>
@@ -255,12 +266,12 @@ function Home() {
                     <h2>{t('home.about.title')}</h2>
                     <p>{t('home.about.description')}</p>
 
-                    <Link to="/about" className="about-link">
+                    <Link to={links.about} className="about-link">
                         {t('home.about.link')}
                     </Link>
                 </div>
 
-                <Link to="/contact" className="contact-cta">
+                <Link to={links.contact} className="contact-cta">
                     <span>{t('home.contact.title')}</span>
                     <strong>↗</strong>
                     <small>{t('home.contact.button')}</small>

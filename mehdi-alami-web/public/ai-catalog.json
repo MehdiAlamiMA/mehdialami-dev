@@ -1,0 +1,21 @@
+{
+    "name": "Mehdi Alami",
+    "description": "Freelance Full-Stack Web Developer specializing in WordPress, PHP, React, TypeScript and ASP.NET Core.",
+    "url": "https://mehdialami.dev",
+    "type": "professional_portfolio",
+    "languages": [ "en", "de", "pt-BR" ],
+    "services": [
+        "WordPress Development",
+        "Custom WordPress Plugins",
+        "Full-Stack Web Development",
+        "REST API Development and Integration",
+        "Website Optimization and Maintenance"
+    ],
+    "pages": {
+        "home": "https://mehdialami.dev/en/",
+        "projects": "https://mehdialami.dev/en/projects",
+        "services": "https://mehdialami.dev/en/services",
+        "about": "https://mehdialami.dev/en/about",
+        "contact": "https://mehdialami.dev/en/contact"
+    }
+}

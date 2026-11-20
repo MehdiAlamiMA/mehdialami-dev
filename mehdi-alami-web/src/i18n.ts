@@ -5,46 +5,41 @@ import de from './locales/de'
 import ptBR from './locales/pt-BR'
 
 const getInitialLanguage = () => {
-    const savedLanguage = localStorage.getItem('language')
-
-    if (savedLanguage) {
-        return savedLanguage
+    if (typeof window === 'undefined') {
+        return 'en'
     }
 
-    const browserLanguage = navigator.language.toLowerCase()
+    const pathname = window.location.pathname
 
-    if (browserLanguage.startsWith('pt')) {
-        return 'pt-BR'
-    }
-
-    if (browserLanguage.startsWith('de')) {
+    if (pathname === '/de' || pathname.startsWith('/de/')) {
         return 'de'
+    }
+
+    if (pathname === '/br' || pathname.startsWith('/br/')) {
+        return 'pt-BR'
     }
 
     return 'en'
 }
 
-i18n
+void i18n
     .use(initReactI18next)
     .init({
         lng: getInitialLanguage(),
         fallbackLng: 'en',
+        supportedLngs: ['en', 'de', 'pt-BR'],
 
         resources: {
-            en: {
-                translation: en,
-            },
-            de: {
-                translation: de,
-            },
-            'pt-BR': {
-                translation: ptBR,
-            },
+            en: { translation: en },
+            de: { translation: de },
+            'pt-BR': { translation: ptBR },
         },
 
         interpolation: {
             escapeValue: false,
         },
+
+        initAsync: false,
     })
 
 export default i18n

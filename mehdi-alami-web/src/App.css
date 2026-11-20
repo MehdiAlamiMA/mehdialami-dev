@@ -3,7 +3,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
-    background-color: var(--color-cream);
+    background-color: var(--color-blue);
     border-bottom: 1px solid rgba(15, 42, 68, 0.12);
 }
 
@@ -21,7 +21,7 @@ header {
         font-size: 28px;
         font-weight: 700;
         letter-spacing: -0.6px;
-        color: var(--color-blue);
+        color: var(--color-cream);
     }
 
 header nav {
@@ -31,32 +31,24 @@ header nav {
 }
 
     header nav a {
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    header nav a {
         padding: 8px 12px;
         font-size: 18px;
         font-weight: 600;
+        color: var(--color-cream);
         transition: background-color 0.2s ease;
     }
 
-        header nav a:hover {
-            background-color: var(--color-brown);
-            color: var(--color-cream);
-        }
-
+        header nav a:hover,
         header nav a.active {
-            background-color: var(--color-brown);
-            color: var(--color-cream);
+            background-color: var(--color-cream);
+            color: var(--color-blue);
         }
 
 .language-switcher button {
     padding: 0;
     border: 0;
     background: none;
-    color: var(--color-blue);
+    color: var(--color-cream);
     font-size: 15px;
     font-weight: 600;
     cursor: pointer;

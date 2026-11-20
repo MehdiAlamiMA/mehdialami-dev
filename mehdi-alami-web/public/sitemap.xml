@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<url>
+		<loc>https://mehdialami.dev/en/</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/en/projects</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/en/services</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/en/about</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/en/contact</loc>
+	</url>
+
+	<url>
+		<loc>https://mehdialami.dev/de/</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/de/projekte</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/de/leistungen</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/de/ueber-mich</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/de/kontakt</loc>
+	</url>
+
+	<url>
+		<loc>https://mehdialami.dev/br/</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/br/projetos</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/br/servicos</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/br/sobre</loc>
+	</url>
+	<url>
+		<loc>https://mehdialami.dev/br/contato</loc>
+	</url>
+</urlset>

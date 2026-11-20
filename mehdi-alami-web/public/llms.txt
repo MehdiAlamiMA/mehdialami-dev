@@ -1,0 +1,25 @@
+# Mehdi Alami
+
+> Freelance Full-Stack Web Developer specializing in WordPress, PHP, React, TypeScript and ASP.NET Core.
+
+## Services
+
+- WordPress development and customization
+- Custom WordPress plugin development
+- Full-stack web application development
+- REST API development and integrations
+- Website optimization and maintenance
+
+## Pages
+
+- [Home](https://mehdialami.dev/en/)
+- [Projects](https://mehdialami.dev/en/projects)
+- [Services](https://mehdialami.dev/en/services)
+- [About](https://mehdialami.dev/en/about)
+- [Contact](https://mehdialami.dev/en/contact)
+
+## Languages
+
+- English
+- German
+- Brazilian Portuguese
